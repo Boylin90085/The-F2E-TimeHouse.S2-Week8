@@ -1,0 +1,93 @@
+$primary: #FFD428;
+$secondary: #655C5C;
+
+*{
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', serif;
+}
+
+html, body{
+  width: auto;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body{
+  display: flex;
+}
+
+h1, h2, h3, h4, h5, p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.container{
+  position: relative;
+  min-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.siderbar{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  &__logo{
+    padding: 30px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    > .material-icons{
+      margin-right: 10px;
+    }
+    &:hover{
+      background-color: $primary;
+    }
+  }
+  &__storage{
+    margin-top: auto;
+  }
+}
+
+.storage{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  > .material-icons{
+    margin-right: 10px;
+  }
+  &__progress-bar{
+    position: relative;
+    height: 5px;
+    width: 100px;
+    margin-left: 63px;
+    margin-bottom: 5px;
+    background-color: #F1F2F6;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0px;
+      width: 60%;
+      height: 100%;
+      background-color: $primary;
+    }
+  }
+  &__used{
+    margin-left: 63px;
+    font-size: 10px;
+    color: #ACB0B9;
+  }
+}

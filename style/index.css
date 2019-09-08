@@ -1,0 +1,33 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Noto Sans TC', serif; }
+
+html, body { width: auto; height: 100%; padding: 0; margin: 0; font-size: 16px; }
+
+body { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+h1, h2, h3, h4, h5, p { margin: 0; }
+
+ul { list-style: none; padding-left: 0px; margin: 0; }
+
+.container { position: relative; min-width: 1440px; margin-left: auto; margin-right: auto; }
+
+.siderbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 100vh; }
+
+.siderbar__logo { padding: 30px; }
+
+.siderbar__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 30px; padding-top: 10px; padding-bottom: 10px; cursor: pointer; }
+
+.siderbar__item > .material-icons { margin-right: 10px; }
+
+.siderbar__item:hover { background-color: #FFD428; }
+
+.siderbar__storage { margin-top: auto; }
+
+.storage { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 30px; margin-bottom: 5px; }
+
+.storage > .material-icons { margin-right: 10px; }
+
+.storage__progress-bar { position: relative; height: 5px; width: 100px; margin-left: 63px; margin-bottom: 5px; background-color: #F1F2F6; }
+
+.storage__progress-bar::before { content: ''; position: absolute; left: 0px; width: 60%; height: 100%; background-color: #FFD428; }
+
+.storage__used { margin-left: 63px; font-size: 10px; color: #ACB0B9; }
